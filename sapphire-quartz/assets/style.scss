@@ -1,0 +1,112 @@
+body {
+  font-family: 'Zen Kaku Gothic Antique', sans-serif;
+  color: #000;
+  font-weight: 300;
+  margin: 0;
+  padding: 10px 0px;
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+  width: calc(100vw - 100px);
+  height: calc(100vh - 100px);
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Sacramento', cursive;
+    color: #14326e;
+    margin: 0;
+  }
+
+  #loading-container {
+    position: absolute;
+    margin: 20%;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vh;
+    background-color: #fff;
+    z-index: 99;
+    color: #14326e;
+    transition: 2s;
+
+    h1 {
+      text-align: center;
+      font-size: 2.5em;
+      transition: 2s;
+    }
+  } 
+
+  .invite-container {
+    margin-left: 20%;
+    width: 40%;
+    min-width: 450px;
+    height: 55vh;
+    background-image: url("backdrop.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    border: 1px solid #ebca60;
+    padding: 25px;
+    padding-left: 180px;
+    opacity: 0;
+    transition: 2s;
+
+    .head-wrap {
+      width: 100%;
+
+      h1 {
+        font-size: 3.5rem;
+        text-align: center;
+      }
+    }
+  
+    .details-wrap {
+      display: flex;
+      flex-direction: column;
+
+      .blurb-wrap {
+        p {
+          font-size: 1.3em;
+
+          span {
+            font-weight: 400;
+          }
+        }
+      }
+  
+      .list-wrap {
+        ul li {
+          list-style: none;
+          width: max-content;
+          font-size: 1.2em;
+          margin-top: 5px;
+  
+          span {
+            font-weight: 500;
+          }
+  
+          a {
+            color: #103d96;
+            text-decoration: none;
+            text-align: center;
+            font-weight: 400;
+            transition: 0.4s;
+  
+            &:hover {
+              color: #4265ac; 
+              letter-spacing: 0.2px;
+            }
+          }
+        }
+      }
+
+      .ending-blurb {
+        align-self: flex-end;
+        margin-right: 15px;
+
+        h3 {
+          font-size: 1.9em;
+
+        }
+      }
+    }
+  }
+}

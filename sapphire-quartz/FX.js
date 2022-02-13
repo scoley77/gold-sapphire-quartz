@@ -7,6 +7,10 @@ const fade = function() {
   setTimeout(()=>{
     document.querySelector('.invite-container').style.opacity = '1';
   }, 3000);
+  setTimeout(()=>{
+    document.querySelector('#loading-container').style.visibility = 'hidden';
+  }, 3000);
+  
 };
 
 fade();
